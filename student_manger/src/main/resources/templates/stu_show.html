@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+    <title>Title</title>
+</head>
+<body>
+<h1>学生列表</h1>
+<table>
+    <tr>
+        <th>编号</th>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>班级名字</th>
+    </tr>
+    <tr th:each="map1:${map}">
+        <td th:text="${map1.key.id}">编号</td>
+        <td th:text="${map1.key.name}">姓名</td>
+        <td th:text="${map1.key.age}">年龄</td>
+        <td th:text="${map1.value.name}">班级名字</td>
+    </tr>
+</table>
+<a href="/stu/toaddstudent">添加学生</a>
+
+</body>
+</html>

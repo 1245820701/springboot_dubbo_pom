@@ -1,0 +1,11 @@
+dubbo:
+  application:
+    name: stu_web
+  registry:
+    address: zookeeper://192.168.174.128:2181
+server:
+  port: 8888
+spring:
+  thymeleaf:
+    cache: false
+
